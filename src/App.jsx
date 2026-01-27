@@ -1,20 +1,10 @@
-import { useState } from "react";
-
+import InputField from "./components/Inputfield";
 const App=()=>{
-  const [name, setName] = useState("");
+
+
   return(
     <>
-    <div>
-      <h2>Name</h2>
-      <input 
-      value={name} 
-      onChange={(event) => setName(event.target.value)} 
-      placeholder="type here"
-      /> 
-    </div>
-    <div>
-      {name}
-    </div>
+    <InputField />
     </>
   )
 }
